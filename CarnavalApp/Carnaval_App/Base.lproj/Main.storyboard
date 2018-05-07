@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+        <array key="Montserrat-Black.ttf">
+            <string>Montserrat-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Carnaval_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxL-0B-cAs">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="YCt-M1-QpN"/>
+                                    <constraint firstAttribute="height" constant="30" id="svG-Kx-voF"/>
+                                </constraints>
+                                <state key="normal" title="Pros"/>
+                                <connections>
+                                    <segue destination="pf6-5V-cZf" kind="show" id="p9u-LC-jAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBC-im-35Q">
+                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8r1-p1-JiT"/>
+                                    <constraint firstAttribute="width" constant="46" id="9ai-gC-iBy"/>
+                                </constraints>
+                                <state key="normal" title="Cons"/>
+                                <connections>
+                                    <segue destination="Nv4-dg-pQO" kind="show" id="8ip-qg-Cw1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carnaval" translatesAutoresizingMaskIntoConstraints="NO" id="YAK-nO-wTN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="181" id="3c0-Yb-42m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="HKS-ZG-psw"/>
+                                    <constraint firstAttribute="height" constant="181" id="Lnn-fj-HTD"/>
+                                    <constraint firstAttribute="width" constant="375" id="oZl-WK-r8A"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carnaval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF5-D6-Bbh">
+                                <rect key="frame" x="79" y="223" width="217" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4vu-Me-YmL"/>
+                                    <constraint firstAttribute="width" constant="217" id="6uz-SR-MDX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sR-91-Zwq">
+                                <rect key="frame" x="40" y="302" width="294" height="289"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Carnaval is a christian holiday which in the Netherlands is mostly celebrated in the provinces of "Noord Brabant" or "Limburg". The holiday is both liked and disliked in both provinces, for me it has a couple of pros and cons. To read about my personal pros and cons about Carnaval press one of the two buttons below.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qBC-im-35Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2O3-e7-ATG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hxL-0B-cAs" secondAttribute="bottom" constant="20" id="4iT-o9-DTw"/>
+                            <constraint firstItem="YAK-nO-wTN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FK5-PR-VvP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxL-0B-cAs" secondAttribute="trailing" constant="16" id="HH9-aC-g7D"/>
+                            <constraint firstItem="0sR-91-Zwq" firstAttribute="top" secondItem="kF5-D6-Bbh" secondAttribute="bottom" constant="35" id="IcY-fQ-8Ag"/>
+                            <constraint firstItem="kF5-D6-Bbh" firstAttribute="top" secondItem="YAK-nO-wTN" secondAttribute="bottom" constant="42" id="My5-tL-OpM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kF5-D6-Bbh" secondAttribute="trailing" constant="79" id="Nt4-fj-nqU"/>
+                            <constraint firstItem="0sR-91-Zwq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="O7p-2r-tQr"/>
+                            <constraint firstItem="qBC-im-35Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PyQ-Ma-ILe"/>
+                            <constraint firstItem="YAK-nO-wTN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TTZ-qP-uxb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qBC-im-35Q" secondAttribute="bottom" constant="20" id="VXa-bS-2pU"/>
+                            <constraint firstItem="YAK-nO-wTN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="b3K-FH-mDa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hxL-0B-cAs" secondAttribute="trailing" constant="16" id="bbp-eb-kEm"/>
+                            <constraint firstItem="kF5-D6-Bbh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="n6k-ue-FJA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0sR-91-Zwq" secondAttribute="trailing" constant="41" id="pGi-X3-qNx"/>
+                            <constraint firstItem="hxL-0B-cAs" firstAttribute="top" secondItem="0sR-91-Zwq" secondAttribute="bottom" constant="26" id="zLw-4R-M11"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r7i-wP-x05">
+            <objects>
+                <viewController id="pf6-5V-cZf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aJ6-WC-ZAS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIo-ew-X8i">
+                                <rect key="frame" x="79" y="20" width="217" height="44"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPW-Sa-yUC">
+                                <rect key="frame" x="318" y="617" width="36" height="30"/>
+                                <state key="normal" title="Cons"/>
+                                <connections>
+                                    <segue destination="Nv4-dg-pQO" kind="show" id="z8o-N5-10j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S41-id-nKI">
+                                <rect key="frame" x="16" y="617" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="mTc-8Z-DuK"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ziw-w5-r1w">
+                                <rect key="frame" x="16" y="102" width="343" height="469"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2Y5-kp-tg0">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Y5-kp-tg0" id="WYS-eh-iGy">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wk1-s1-TqW" firstAttribute="bottom" secondItem="dPW-Sa-yUC" secondAttribute="bottom" constant="20" id="9Ao-fZ-q9o"/>
+                            <constraint firstItem="wk1-s1-TqW" firstAttribute="bottom" secondItem="S41-id-nKI" secondAttribute="bottom" constant="20" id="Eh1-wS-ItF"/>
+                            <constraint firstItem="ZIo-ew-X8i" firstAttribute="leading" secondItem="wk1-s1-TqW" secondAttribute="leading" constant="79" id="I5T-CD-ZoU"/>
+                            <constraint firstItem="wk1-s1-TqW" firstAttribute="trailing" secondItem="dPW-Sa-yUC" secondAttribute="trailing" constant="21" id="Jz5-CQ-kK9"/>
+                            <constraint firstItem="ZIo-ew-X8i" firstAttribute="top" secondItem="wk1-s1-TqW" secondAttribute="top" id="RHT-nK-v2e"/>
+                            <constraint firstItem="wk1-s1-TqW" firstAttribute="trailing" secondItem="ZIo-ew-X8i" secondAttribute="trailing" constant="79" id="Vpt-RH-N7g"/>
+                            <constraint firstItem="S41-id-nKI" firstAttribute="leading" secondItem="wk1-s1-TqW" secondAttribute="leading" constant="16" id="oiw-CZ-fpl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wk1-s1-TqW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkd-vg-Gxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="117.39130434782609"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SZc-UC-JDs">
+            <objects>
+                <viewController id="Nv4-dg-pQO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LRQ-3M-v9V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6x-Xe-Kkw">
+                                <rect key="frame" x="79" y="20" width="217" height="44"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svG-if-uj4">
+                                <rect key="frame" x="24" y="617" width="31" height="30"/>
+                                <state key="normal" title="Pros"/>
+                                <connections>
+                                    <segue destination="pf6-5V-cZf" kind="show" id="4F2-8W-3k4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijS-wx-3o3">
+                                <rect key="frame" x="316" y="617" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="R02-o2-fWM"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nr4-RX-JwS">
+                                <rect key="frame" x="24" y="102" width="333" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MVQ-8h-fpc">
+                                        <rect key="frame" x="0.0" y="28" width="333" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MVQ-8h-fpc" id="JGu-rC-Gc0">
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F6x-Xe-Kkw" firstAttribute="leading" secondItem="5Nh-Ri-UIU" secondAttribute="leading" constant="79" id="9yQ-iv-VWB"/>
+                            <constraint firstItem="5Nh-Ri-UIU" firstAttribute="bottom" secondItem="ijS-wx-3o3" secondAttribute="bottom" constant="20" id="UfS-VW-bAY"/>
+                            <constraint firstItem="svG-if-uj4" firstAttribute="leading" secondItem="5Nh-Ri-UIU" secondAttribute="leading" constant="24" id="VO2-Yv-224"/>
+                            <constraint firstItem="5Nh-Ri-UIU" firstAttribute="trailing" secondItem="F6x-Xe-Kkw" secondAttribute="trailing" constant="79" id="a6v-5a-1ye"/>
+                            <constraint firstItem="F6x-Xe-Kkw" firstAttribute="top" secondItem="5Nh-Ri-UIU" secondAttribute="top" id="f5T-fh-UZ3"/>
+                            <constraint firstItem="5Nh-Ri-UIU" firstAttribute="bottom" secondItem="svG-if-uj4" secondAttribute="bottom" constant="20" id="nFl-46-Dog"/>
+                            <constraint firstItem="5Nh-Ri-UIU" firstAttribute="trailing" secondItem="ijS-wx-3o3" secondAttribute="trailing" constant="18" id="qaj-FN-fxB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Nh-Ri-UIU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rep-oG-unz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472.8" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="carnaval" width="750" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="z8o-N5-10j"/>
+        <segue reference="4F2-8W-3k4"/>
+        <segue reference="mTc-8Z-DuK"/>
+    </inferredMetricsTieBreakers>
+</document>
